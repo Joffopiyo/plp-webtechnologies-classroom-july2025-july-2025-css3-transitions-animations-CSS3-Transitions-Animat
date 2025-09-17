@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS & JavaScript Animation Showcase</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>CSS & JavaScript Animation Showcase</h1>
+            <p>Demonstrating transitions, animations, and JavaScript integration</p>
+        </header>
+        
+        <section class="showcase-section">
+            <h2>CSS Transitions & Animations</h2>
+            
+            <div class="demo-grid">
+                <div class="demo-item">
+                    <h3>Button Hover Effects</h3>
+                    <p>Hover over and click the buttons to see transition effects</p>
+                    <div class="controls">
+                        <button class="btn">Hover Me</button>
+                        <button class="btn" style="background: #2ecc71;">And Me</button>
+                    </div>
+                </div>
+                
+                <div class="demo-item">
+                    <h3>Fade Transition</h3>
+                    <p>Click to toggle fade effect</p>
+                    <div class="animation-box fade-in" id="fade-box">Fade Box</div>
+                    <div class="controls">
+                        <button class="btn" id="fade-btn">Toggle Fade</button>
+                    </div>
+                </div>
+                
+                <div class="demo-item">
+                    <h3>Slide Transition</h3>
+                    <p>Click to toggle slide effect</p>
+                    <div class="animation-box slide-in" id="slide-box">Slide Box</div>
+                    <div class="controls">
+                        <button class="btn" id="slide-btn">Toggle Slide</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="showcase-section">
+            <h2>Keyframe Animations</h2>
+            
+            <div class="demo-grid">
+                <div class="demo-item">
+                    <h3>Bounce Animation</h3>
+                    <p>Continuous bounce effect using @keyframes</p>
+                    <div class="animation-box bounce" id="bounce-box">Bounce Box</div>
+                    <div class="controls">
+                        <button class="btn" id="bounce-toggle">Stop Bouncing</button>
+                    </div>
+                </div>
+                
+                <div class="demo-item">
+                    <h3>Pulse Animation</h3>
+                    <p>Continuous pulse effect using @keyframes</p>
+                    <div class="animation-box pulse" id="pulse-box">Pulse Box</div>
+                    <div class="controls">
+                        <button class="btn" id="pulse-toggle">Stop Pulsing</button>
+                    </div>
+                </div>
+                
+                <div class="demo-item">
+                    <h3>Loading Animation</h3>
+                    <p>Click to start/stop the loading animation</p>
+                    <div class="loader" id="loader">
+                        <div class="loader-dot"></div>
+                        <div class="loader-dot"></div>
+                        <div class="loader-dot"></div>
+                    </div>
+                    <div class="controls">
+                        <button class="btn" id="loader-toggle">Stop Loading</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="showcase-section">
+            <h2>Interactive Animations</h2>
+            
+            <div class="demo-grid">
+                <div class="demo-item">
+                    <h3>Card Flip</h3>
+                    <p>Click the card to flip it</p>
+                    <div class="card-container" id="card-container">
+                        <div class="card" id="card">
+                            <div class="card-front">Front</div>
+                            <div class="card-back">Back</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="demo-item">
+                    <h3>Popup Modal</h3>
+                    <p>Click to open a modal with animation</p>
+                    <div class="controls">
+                        <button class="btn" id="modal-open">Open Modal</button>
+                    </div>
+                </div>
+                
+                <div class="demo-item">
+                    <h3>Color Transformer</h3>
+                    <p>Enter a color and see it transform</p>
+                    <div class="animation-box" id="color-box">Color Box</div>
+                    <div class="controls">
+                        <input type="text" id="color-input" placeholder="Enter color (e.g. red, #ff0000)">
+                        <button class="btn" id="color-btn">Transform</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    
+    <!-- Modal -->
+    <div class="modal-overlay" id="modal-overlay">
+        <div class="modal">
+            <button class="close-modal" id="modal-close">&times;</button>
+            <h2>Animated Modal</h2>
+            <p>This modal smoothly fades in and slides up using CSS transitions triggered by JavaScript.</p>
+            <p>Click the X button or outside the modal to close it.</p>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
